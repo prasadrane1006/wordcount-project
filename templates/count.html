@@ -1,0 +1,13 @@
+<h1>you are correct aheading for count</h1>
+<a href="{% url 'homepage' %}">start and search for text online</a>
+
+<h1>your text</h1>
+{{fulltext}}
+<h1>there are {{count}} words in your text</h1>
+{% for word,counttotal in sortedwords%}
+
+{{word}}
+<br/>
+{{counttotal}}
+<br/>
+{% endfor %}
